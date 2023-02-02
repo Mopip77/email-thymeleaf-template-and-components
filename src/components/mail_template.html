@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Message Subject or Title</title>
+  <!--[if mso]>
+  <style>
+  table {border-collapse:collapse;border-spacing:0;border:none;margin:0;}
+  div, td {padding:0;}
+  div {margin:0 !important;}
+  </style>
+  <noscript>
+  <xml>
+    <o:OfficeDocumentSettings>
+      <o:PixelsPerInch>96</o:PixelsPerInch>
+    </o:OfficeDocumentSettings>
+  </xml>
+  </noscript>
+  <![endif]-->
+  <style type="text/css">
+    #outlook a {padding:0;}
+
+    /* CLIENT-SPECIFIC STYLES */
+    body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+    table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+    img { -ms-interpolation-mode: bicubic; }
+    /* table-style-1 */
+    .table-style-2 { border: 2px solid #2e9878 !important; border-collapse: collapse; }
+    .table-style-2 tr { border-top: 1px solid #dddddd; }
+    .table-style-2 th { border-right: 2px solid #2e9878; background: #2e9878; text-align: left; color: white; padding-top: 10px; padding-bottom: 10px; padding-left: 2px; }
+    .table-style-2 td { border-right: 2px solid #2e9878; padding-top: 5px; padding-bottom: 5px; padding-left: 2px; }
+    /* table-style-2 */
+    .table-style-2 { border: 2px solid #2980b9 !important; border-collapse: collapse; }
+    .table-style-2 tr { border-top: 1px solid #dddddd; }
+    .table-style-2 th { border-right: 2px solid #2980b9; background: #2980b9; text-align: left; color: white; padding-top: 10px; padding-bottom: 10px; padding-left: 2px; }
+    .table-style-2 td { border-right: 2px solid #2980b9; padding-top: 5px; padding-bottom: 5px; padding-left: 2px; }
+
+    /* RESET STYLES */
+    img { border: 0; outline: none; text-decoration: none; }
+    table { border-collapse: collapse !important; }
+    body { margin: 0 !important; padding: 0 !important; width: 100% !important; }
+
+    /* iOS BLUE LINKS */
+    a[x-apple-data-detectors] {
+      color: inherit !important;
+      text-decoration: none !important;
+      font-size: inherit !important;
+      font-family: inherit !important;
+      font-weight: inherit !important;
+      line-height: inherit !important;
+    }
+
+    /* ANDROID CENTER FIX */
+    div[style*="margin: 16px 0;"] { margin: 0 !important; }
+
+    /* MEDIA QUERIES */
+    @media all and (max-width:639px){
+      .wrapper{ width:320px!important; padding: 0 !important; }
+      .container{ width:300px!important;  padding: 0 !important; }
+      .mobile{ width:300px!important; display:block!important; padding: 0 !important; }
+      .img{ width:100% !important; height:auto !important; }
+      *[class="mobileOff"] { width: 0px !important; display: none !important; }
+      *[class*="mobileOn"] { display: block !important; max-height:none !important; }
+    }
+  </style>
+</head>
+
+<body style="margin:0;padding:0;word-spacing:normal"
+      th:styleappend="'background-color:' + ${G_bg_color}">
+<div
+    role="article"
+    aria-roledescription="email"
+    lang="en"
+    style="text-size-adjust:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%"
+    th:styleappend="'background-color:' + ${G_bg_color}">
+
+  <table
+      role="presentation"
+      th:style="'width:100%;border:none;border-spacing:0;' +
+      'background-color:' + ${bg_color} + ';' +
+      ${G_debug_mode ? 'border: 1px solid cyan;' : ''}">
+    <th:block layout:fragment="body"></th:block>
+  </table>
+
+</div>
+</body>

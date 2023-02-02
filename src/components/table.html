@@ -1,0 +1,19 @@
+<th:block
+    layout:fragment="table"
+    th:with="style=${style?:'style-1'}, width=${width?:'100%'}">
+  <table
+      role="table"
+      class="form-table mobile"
+      th:classappend="${style}"
+      th:style="'width:' + ${width} + ';'">
+
+    <tr layout:fragment="header">
+
+    </tr>
+
+    <datas layout:fragment="datas">
+
+    </datas>
+
+  </table>
+</th:block>

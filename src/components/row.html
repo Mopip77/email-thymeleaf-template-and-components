@@ -1,0 +1,20 @@
+<tr layout:fragment="row"
+    th:with="bg_color=${bg_color?:G_table_bg_color}, width=${width?:'600px'}">
+  <td style="padding:0;"
+      th:styleappend="${G_debug_mode ? 'border: 1px solid cyan;' : ''}">
+    <!--[if mso]>
+    <table role="presentation"
+           th:style="'width:' + ${fixed_width} + ';' +
+               'background-color:' + ${bg_color} + ';' +
+               ${G_debug_mode ? 'border: 1px solid cyan;' : ''}">
+    <tr>
+      <td>
+    <![endif]-->
+    <th:block layout:fragment="row_content"></th:block>
+    <!--[if mso]>
+    </td>
+    </tr>
+    </table>
+    <![endif]-->
+  </td>
+</tr>
