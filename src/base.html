@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:o="urn:schemas-microsoft-com:office:office"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{components/mail_template}"
+      th:with="G_bg_color='white',G_table_bg_color='white',G_debug_mode=false">
+
+<body><th:block layout:fragment="body">
+
+    <row layout:replace="~{components/row}"> <th:block layout:fragment="row_content">
+      Dear user，
+    </th:block> </row>
+
+    <space layout:replace="~{components/space}"></space>
+
+    <space layout:replace="~{components/space :: space(line_num=2)}"></space>
+
+    <row layout:replace="~{components/row}"> <th:block layout:fragment="row_content">
+        <table layout:replace="~{components/table :: table(width='100%', style='style-2')}">
+            <tr layout:fragment="header">
+                <th>字段1</th>
+            </tr>
+
+            <th:block layout:fragment="datas">
+                <tr>
+                    <td>值1</td>
+                </tr>
+                <tr>
+                    <td>值2</td>
+                </tr>
+            </th:block>
+
+        </table>
+    </th:block> </row>
+
+  <footer layout:replace="~{components/footer}"></footer>
+
+</th:block> </body>
+
+</html>
+
+
