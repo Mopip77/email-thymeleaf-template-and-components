@@ -53,6 +53,7 @@ body:
       - <space>
       - <table>
       - tr
+  - <hr>
   - <footer>
 ```
 
@@ -80,6 +81,14 @@ body:
 
 ```html
 <space layout:replace="~{components/space :: space(line_num=2)}"></space>
+```
+
+#### hr
+
+一条灰色虚线，用于分割
+
+```html
+<hr layout:replace="~{components/hr}"></hr>
 ```
 
 #### table
