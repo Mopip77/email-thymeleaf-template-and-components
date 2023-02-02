@@ -1,11 +1,11 @@
 <tr layout:fragment="row"
-    th:with="bg_color=${bg_color?:G_table_bg_color}, width=${width?:'600px'}">
+    th:with="width=${width?:'100%'}">
   <td style="padding:0;"
       th:styleappend="${G_debug_mode ? 'border: 1px solid cyan;' : ''}">
     <!--[if mso]>
     <table role="presentation"
-           th:style="'width:' + ${fixed_width} + ';' +
-               'background-color:' + ${bg_color} + ';' +
+           class="mso-row"
+           th:style="'width:' + ${width} + ';' +
                ${G_debug_mode ? 'border: 1px solid cyan;' : ''}">
     <tr>
       <td>
@@ -18,3 +18,4 @@
     <![endif]-->
   </td>
 </tr>
+

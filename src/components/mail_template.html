@@ -26,6 +26,11 @@
     body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
     table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
     img { -ms-interpolation-mode: bicubic; }
+    /* windows outlook fallback style (fallback to style-1) */
+    .mso-row table { border: 2px solid #2e9878 !important; border-collapse: collapse; }
+    .mso-row table tr { border-top: 1px solid #dddddd; }
+    .mso-row table th { border-right: 2px solid #2e9878; background: #2e9878; text-align: left; color: white; padding-top: 10px; padding-bottom: 10px; padding-left: 2px; }
+    .mso-row table td { border-right: 2px solid #2e9878; padding-top: 5px; padding-bottom: 5px; padding-left: 2px; }
     /* table-style-1 */
     .table-style-1 { border: 2px solid #2e9878 !important; border-collapse: collapse; }
     .table-style-1 tr { border-top: 1px solid #dddddd; }

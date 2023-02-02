@@ -1,19 +1,21 @@
 <th:block
     layout:fragment="table"
     th:with="style=${style?:'table-style-1'}, width=${width?:'100%'}">
+
   <table
       role="table"
       class="form-table"
       th:classappend="${style}"
       th:style="'width:' + ${width} + ';'">
 
-    <tr layout:fragment="header">
+   <tr layout:fragment="header">
 
-    </tr>
+   </tr>
 
-    <datas layout:fragment="datas">
+   <datas layout:fragment="datas">
 
-    </datas>
+   </datas>
 
-  </table>
+ </table>
 </th:block>
+
