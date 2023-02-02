@@ -8,7 +8,7 @@ HTML邮件和普通的HTML网页不同，各个邮件客户端对html的标签�
 
 因此对于非EDM(例如简单的通知类邮件) 将所有邮件客户端都支持的HTML特性进行组件封装和构建模板，能极大减少处理邮件兼容性的时间。
 
-*Features*
+**Features**
 
 - 响应式布局
 - 支持多个组件
@@ -56,7 +56,7 @@ body:
   - <footer>
 ```
 
-#### <row>
+#### row
 
 `<row>`可以理解为html中的`<p>`，body中划分成多个`<row>`区域块
 
@@ -66,7 +66,7 @@ body:
 </th:block> </row>
 ```
 
-#### <space>
+#### space
 
 `<space>`就是空行，用于撑开`<row>`之间的间隔
 
@@ -82,7 +82,7 @@ body:
 <space layout:replace="~{components/space :: space(line_num=2)}"></space>
 ```
 
-#### <table>
+#### table
 
 `<table>`就是对html table的封装，支持了一些预设样式['table-style-1', 'table-style-2']（也可以在`components/mail_template.html`里自建）
 
@@ -103,7 +103,7 @@ body:
 </table>
 ```
 
-#### <footer>
+#### footer
 
 通用页脚，也可举一反三增加通用icon，通用页头
 
@@ -117,22 +117,22 @@ body:
 
 ## Reference
 
-*编写指南*
+**编写指南**
 
 - https://emailframe.work/
 - https://blog.csdn.net/lovearforever/article/details/80854731
 - https://juejin.cn/post/6875633621382725645
 
-*模板*
+**模板**
 
 - https://github.com/leemunroe/responsive-html-email-template
 - http://htmlemailboilerplate.com/
 
-*测试和校验*
+**测试和校验**
 
 - https://htmlemail.io/inline
 - https://validator.w3.org/#validate_by_input
 
-*背景图片*
+**背景图片**
 
 - https://www.emailonacid.com/blog/article/email-development/html-background-images-in-email/#setting-up-your-tables
